@@ -21,6 +21,14 @@ ListNode* createNode(int data){
 }
 
 void insertAtHead(ListNode** head, int data){
-
+  ListNode* newNode = createNode(data);
+  if(*head->m_next == NULL){
+    *head->m_next = newNode;
+    return;
+  }
+  
+  *head->m_next->m_prev = newNode;
+  newNode->m_next = *head->m_next;
+  *head->m_next = newNode;
 }
 
