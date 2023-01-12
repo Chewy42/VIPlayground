@@ -32,3 +32,14 @@ void insertAtHead(ListNode** head, int data){
   *head->m_next = newNode;
 }
 
+void insertAtTail(ListNode** tail, int data){
+  ListNode* newNode = createNode(data);
+  if(*tail->m_prev == NULL){
+    *tail->m_prev = newNode;
+    return;
+  }
+  
+  *tail->m_prev->m_next = newNode;
+  newNode->m_prev= *tail->m_prev;
+  *tail->m_prev = newNode;
+}
