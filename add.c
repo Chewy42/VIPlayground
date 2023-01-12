@@ -10,5 +10,7 @@ int main(int argc, char *argv[]){
 
 //linked list
 struct ListNode(int data){
-
+  int m_data;
+  struct ListNode* m_next = NULL;
+  struct ListNode* m_prev = NULL;
 }
