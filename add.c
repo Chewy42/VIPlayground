@@ -14,3 +14,13 @@ struct ListNode(int data){
   struct ListNode* m_next = NULL;
   struct ListNode* m_prev = NULL;
 }
+
+ListNode* createNode(int data){
+  ListNode newNode = (data)malloc(sizeof(ListNode));
+  return newNode;
+}
+
+void insertAtHead(ListNode** head, int data){
+
+}
+
