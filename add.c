@@ -43,3 +43,9 @@ void insertAtTail(ListNode** tail, int data){
   newNode->m_prev= *tail->m_prev;
   *tail->m_prev = newNode;
 }
+
+void printList(ListNode** head){
+  while(*head->m_next != NULL){
+    printf("%d ", *head->m_data);
+  }
+}
