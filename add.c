@@ -1,7 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 int main(int argc, char *argv[]){
-  //test out linked list
+  //test out list
+  
+  //make array and reverse it
   return 0;
 }
 
@@ -46,3 +48,4 @@ void printList(ListNode** head){
     printf("%d ", *head->m_data);
   }
 }
+
