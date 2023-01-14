@@ -4,6 +4,11 @@ int main(int argc, char *argv[]){
   //test out list
   
   //make array and reverse it
+  int arr[10];
+  for(int i = 0; i < 11; i++){
+    arr[i] = i;
+    printf("%d\n", i);
+  }
   return 0;
 }
 
