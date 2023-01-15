@@ -4,14 +4,14 @@ int main(int argc, char *argv[]){
   //test out list
   
   //make array and reverse it
-  int arr[10];
+  int arr[10]; 
   for(int i = 0; i < 10; i++){
     arr[i] = i;
     printf("%d\n", i);
   }
   int revArr[10];
   int e = -1;
-  for(int i = 9; i > -1; i++){
+  for(int i = 9; i > -1; i--){
     revArr[++e] = arr[i];
     printf("%d\n", arr[i]);
   }
