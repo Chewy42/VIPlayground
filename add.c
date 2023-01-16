@@ -2,7 +2,12 @@
 #include <stdlib.h>
 int main(int argc, char *argv[]){
   //test out list
+  ListNode* head = createNode(10);
   
+  insertAtTail(head, 5);
+  printList(head);
+  
+  //for daash group
   //make array and reverse it
   int arr[10]; 
   for(int i = 0; i < 10; i++){
